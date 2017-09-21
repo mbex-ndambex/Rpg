@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>"Rpg"</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="../libs/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../libs/css/tether.min.css">
+</head>
+<body>
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    	<div class="hero-hp">
+    		HP : <span id="hero-hp"></span>
+    	</div>
+  </nav>
+</div>
+
+
+<div class="container">
+<div class="row" id="battle-container">
+	<div class="col-sm-6 text-center">
+	<h4 class="display-6">Monsters Summoners</h4>
+	</div>
+</div>
+<div class="row">
+<div class="col-sm-12" id="monster-container">
+	<div class="col-sm-9">
+		<div class="card " id="monsters-stats">
+		<div class="card-body">
+			<table class="table table-responsive">
+			<strong><h5 id="monster-name">Monster</h5></strong>
+				<thead><strong>STATS</strong></thead>
+				<tr>
+					<th>HP</th>
+					<td><span id="monster-hp">0</span>/<span id="monster-maxhp">0</span></td>
+					<th>Defence</th>
+					<td id="monster-def">0/0</td>
+				</tr>
+				<tr>
+					<th>Type</th>
+					<td id="monster-type"> - </td>
+					<th>Power</th>
+					<td><span id="monster-power">0</span> - <span id="monster-maxpower">0</span></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="col-sm-9 buttons text-center">
+<button class="btn btn-danger btn-sm" id="summon-monster" onclick="summon()"> Summon </button>
+</div>
+
+<div class="col-sm-9 buttons text-center">
+<button class="btn btn-success btn-sm " id="attack" onclick="attack()"> Attack </button>
+</div>
+
+<div class="alert alert-primary hidden" id="shout"></div>
+
+
+</div>
+</div>
+
+
+
+<!--SCRIPT SECTION-->
+<script type="text/javascript" src="../libs/js/vue.min.js"></script>
+<script type="text/javascript" src="../libs/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="../libs/js/popper.min.js"></script>
+<script type="text/javascript" src="../libs/js/tether.min.js"></script>
+<script type="text/javascript" src="../libs/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
