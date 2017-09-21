@@ -1,0 +1,39 @@
+body{
+font-size:12px!important;
+}
+
+#battle-container {
+	margin-top:1.3rem;
+}
+#battle-container h4{
+	display:inline-block;
+	text-align:center;
+	padding:.5em .5em;
+	border: 1px solid #eee;
+	margin:auto;
+	float:none;
+}
+#monster-container {
+display:inline-flex;
+margin-top:1.3rem;
+}
+
+.table thead{
+font-weight:bolder;
+}
+
+.hidden {
+visibility : hidden;}
+
+.buttons{
+margin-top:2em;
+}
+
+.hero-hp{
+display:inline-block;
+list-style:none;
+color:#fff!important;
+float:left;
+}
+#hero-hp{
+color:#fff;}
